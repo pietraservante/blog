@@ -38,7 +38,7 @@
             background-color: #1a1a1a;
             padding: 20px;
             margin: 20px auto;
-            max-width: 600px;
+            max-width: 700px;
             border-radius: 8px;
             text-align: left;
         }
@@ -46,21 +46,50 @@
         article img {
             width: 100%;
             border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 2px solid #e50914;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .artigo-autor {
             color: #aaaaaa;
             font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .botoes {
+            margin-top: 15px;
         }
 
         button {
-            background-color: #e50914;
+            background-color: #333;
             color: white;
-            border: none;
-            padding: 8px 12px;
+            border: 1px solid #e50914;
+            padding: 8px 15px;
             margin-right: 10px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e50914;
         }
     </style>
 </head>
@@ -75,18 +104,38 @@
         <p>Se você estiver procurando resenhas de filmes e séries, o lugar é aqui!</p>
 
         <article>
+            <h2>Título da Nova Curiosidade</h2>
+            <p class="artigo-autor">Por: Nome do Autor</p>
+
             <img src="imagem-blog.png" alt="Descrição da imagem para acessibilidade">
-            <div>
-                <h2>Vocês ja assistiram iCARLY?/h2>
-                <p class="artigo-autor">Por: servante,pietra.</p>
-                <p>para sim aperte❤️ para não aperte💬, ate mais!.</p>
-                
-                <button>❤️ <span>0</span></button>
-                <button>💬 <span>0</span></button>
+
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/ID_DO_VIDEO" 
+                    title="Vídeo do artigo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>Texto da curiosidade tecnológica aqui.</p>
+
+            <div class="botoes">
+                <button onclick="aumentar('like1')">❤️ <span id="like1">0</span></button>
+                <button onclick="aumentar('coment1')">💬 <span id="coment1">0</span></button>
             </div>
         </article>
 
     </main>
+
+    <script>
+        function aumentar(id) {
+            let numero = document.getElementById(id);
+            let valorAtual = parseInt(numero.innerText);
+            numero.innerText = valorAtual + 1;
+        }
+    </script>
 
 </body>
 </html>
