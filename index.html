@@ -5,7 +5,7 @@
     <title>Hora do Filme</title>
     <style>
         body {
-            background-color: #0a0a0a; /* fundo preto */
+            background-color: #0a0a0a; 
             color: #ffffff; 
             font-family: Arial;
             margin: 0;
@@ -13,15 +13,14 @@
             text-align: center;
         }
         
-        /* CABEÇALHO COM LINHA VERMELHA */
         header {
             background-color: #111;
             padding: 30px;
-            border-bottom: 4px solid #e50914; /* AQUI É A LINHA VERMELHA */
+            border-bottom: 4px solid #e50914; 
         }
         
         header h1 {
-            color: #e50914; /* vermelho Netflix */
+            color: #e50914; 
             margin: 0;
             font-size: 32px;
         }
@@ -30,21 +29,38 @@
             color: #cccccc;
             margin: 5px 0 0 0;
         }
-        <main>
-        <article>
-    <img src="imagem-blog.png" 
-         alt="Descrição da imagem para acessibilidade">
-    <div>
-        <h2>Título da Nova Curiosidade</h2>
-        <p class="artigo-autor">Por: Nome do Autor</p>
-        <p>Texto da curiosidade tecnológica aqui.</p>
-        <button>❤️<span>0</span></button>
-        <button>��<span>0</span></button>
-    </div>
-</article>
 
         main {
             padding: 60px 20px;
+        }
+
+        article {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .artigo-autor {
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -56,7 +72,19 @@
     </header>
 
     <main>
-        <p>se você estiver procurando resenhas de filmes e séries, o lugar é aqui!</p>
+        <p>Se você estiver procurando resenhas de filmes e séries, o lugar é aqui!</p>
+
+        <article>
+            <img src="imagem-blog.png" alt="Descrição da imagem para acessibilidade">
+            <div>
+                <h2>Título da Nova Curiosidade</h2>
+                <p class="artigo-autor">Por: Nome do Autor</p>
+                <p>Texto da curiosidade tecnológica aqui.</p>
+                <button>❤️ <span>0</span></button>
+                <button>💬 <span>0</span></button>
+            </div>
+        </article>
+
     </main>
 
 </body>
