@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #0a0a0a;
-            color: #ffffff;
+            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -24,33 +24,25 @@
             font-size: 32px;
         }
         header p {
-            color: #cccccc;
-            margin: 8px 0 0 0;
+            color: #ccc;
         }
         main {
-            padding: 60px 20px;
-        }
-        main > p {
-            color: #cccccc;
-            font-size: 18px;
+            padding: 50px 20px;
         }
         article {
             background-color: #1a1a1a;
-            padding: 20px;
+            padding: 25px;
             margin: 20px auto;
             max-width: 700px;
-            border-radius: 8px;
+            border-radius: 10px;
             text-align: left;
-            box-shadow: 0 0 20px rgba(229, 9, 20, 0.15);
         }
         article h2 {
             color: #e50914;
             font-size: 28px;
-            margin-top: 0;
         }
         article h3 {
-            color: #ffffff;
-            font-size: 22px;
+            color: white;
             margin-top: 25px;
         }
         article img {
@@ -58,25 +50,25 @@
             width: 100%;
             max-width: 660px;
             height: auto;
-            border-radius: 8px;
-            margin: 15px auto;
+            border-radius: 10px;
+            margin: 20px auto;
         }
         .artigo-autor {
-            color: #aaaaaa;
+            color: #999;
             font-size: 14px;
-            margin-bottom: 15px;
         }
         article p {
             line-height: 1.6;
         }
         .video-container {
             position: relative;
+            width: 100%;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            margin: 20px 0;
+            margin-top: 20px;
+            border-radius: 10px;
             border: 2px solid #e50914;
-            border-radius: 8px;
         }
         .video-container iframe {
             position: absolute;
@@ -84,7 +76,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
         }
         .botoes {
             margin-top: 20px;
@@ -93,7 +85,7 @@
             background-color: #333;
             color: white;
             border: 1px solid #e50914;
-            padding: 8px 15px;
+            padding: 10px 18px;
             margin-right: 10px;
             border-radius: 5px;
             cursor: pointer;
@@ -114,88 +106,68 @@
     <header>
         <h1>Sejam bem-vindos à Hora do Filme!</h1>
         <p>
-            Aqui mostramos filmes, séries e tudo que há de bom sobre cinema!
+            Aqui falamos sobre filmes e séries que a gente gosta!
         </p>
     </header>
     <main>
         <p>
-            Se você estiver procurando resenhas de filmes e séries,
-            o lugar é aqui!
+            Hoje vamos falar um pouco sobre uma série que marcou muita gente.
         </p>
         <article>
             <h2>iCarly - E aí, conhecem ou não? Haha!</h2>
             <p class="artigo-autor">
                 Por: Pietra Servante
             </p>
-            <!-- IMAGEM DO ICARLY -->
+            <!-- IMAGEM -->
             <img
-                src="https://static.wikia.nocookie.net/icarly/images/4/4d/ICarly_cast.jpg"
-                alt="Elenco da série iCarly">
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8c/ICarly_actors_at_Joint_Base_McGuire-Dix-Lakehurst_2.jpg"
+                alt="Elenco de iCarly">
             <h3>📺 Sobre iCarly</h3>
             <p>
-                <strong>iCarly</strong> é uma série de comédia adolescente
-                da Nickelodeon criada por Dan Schneider.
+                iCarly é uma série da Nickelodeon que conta a história
+                de Carly, Sam e Freddie.
             </p>
             <p>
-                A história acompanha Carly Shay, Sam Puckett e Freddie Benson,
-                três amigos que criam um programa na internet chamado
-                <strong>iCarly</strong>.
+                Eles criam um programa na internet chamado iCarly,
+                cheio de vídeos e coisas engraçadas.
             </p>
             <p>
-                O programa começa como uma brincadeira, mas rapidamente
-                se transforma em um grande sucesso na internet.
-                Carly e Sam apresentam o programa enquanto Freddie
-                fica responsável pelas câmeras e pela parte técnica.
+                A série estreou em 2007 e fez bastante sucesso,
+                principalmente entre o público adolescente.
+            </p>
+            <h3>⭐ Personagens</h3>
+            <p>
+                <strong>Carly Shay</strong> — Miranda Cosgrove
             </p>
             <p>
-                Carly também mora com seu irmão mais velho, Spencer Shay,
-                que está sempre envolvido nas situações malucas da série.
-            </p>
-            <h3>⭐ Personagens principais</h3>
-            <p>
-                👩 <strong>Carly Shay</strong> — Miranda Cosgrove
+                <strong>Sam Puckett</strong> — Jennette McCurdy
             </p>
             <p>
-                👩 <strong>Sam Puckett</strong> — Jennette McCurdy
+                <strong>Freddie Benson</strong> — Nathan Kress
             </p>
             <p>
-                👨 <strong>Freddie Benson</strong> — Nathan Kress
+                <strong>Spencer Shay</strong> — Jerry Trainor
             </p>
             <p>
-                👨 <strong>Spencer Shay</strong> — Jerry Trainor
+                <strong>Gibby</strong> — Noah Munck
             </p>
-            <p>
-                👨 <strong>Gibby</strong> — Noah Munck
-            </p>
-            <h3>🎬 Vídeo de iCarly</h3>
-            <!-- VÍDEO DO ICARLY -->
+            <h3>🎬 Vídeo</h3>
             <div class="video-container">
                 <iframe
-                    src="https://www.youtube.com/embed/B54jxWy5LSY"
-                    title="Vídeo de iCarly"
+                    src="https://www.youtube.com/embed/UZPdQyXl-Lo"
+                    title="iCarly"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
-            <h3>💜 Por que iCarly marcou uma geração?</h3>
+            <h3>💜 Minha opinião</h3>
             <p>
-                iCarly ficou conhecida pelo humor, pelos personagens
-                divertidos e pelo famoso programa dentro da própria série.
-                Os episódios misturavam situações do cotidiano dos
-                personagens com vídeos engraçados, desafios e momentos
-                inesperados.
+                Eu acho iCarly uma série muito divertida e que dá
+                bastante nostalgia para quem assistia quando era menor.
             </p>
             <p>
-                A série original estreou em 2007 e continuou sendo exibida
-                durante vários anos. Em 2010, episódios como
-                <strong>iSaved Your Life</strong> e <strong>iPsycho</strong>
-                fizeram parte da fase de grande sucesso da série.
+                E você, já assistiu iCarly? 😄
             </p>
-            <h3>😂 E você?</h3>
-            <p>
-                Você conhecia iCarly? Qual é o seu personagem favorito?
-            </p>
-            <!-- BOTÕES -->
             <div class="botoes">
                 <button onclick="aumentar('like1')">
                     ❤️ <span id="like1">0</span>
