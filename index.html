@@ -1,131 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Filme</title>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        main {
-            width: 80%;
-            margin: 30px auto;
-        }
-        article {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #e91e63;
-        }
-        h3 {
-            color: #333;
-        }
-        p {
-            line-height: 1.5;
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 15px auto;
-            border-radius: 5px;
-        }
-        .video {
-            text-align: center;
-            margin-top: 20px;
-        }
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 340px;
-            border: none;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Hora do Filme</h1>
-        <p>Filmes e séries que a gente gosta!</p>
-    </header>
-    <main>
-        <article>
-            <h2>iCarly</h2>
-            <p>
-                Por: Pietra Servante
-            </p>
-            <h3>Sobre a série</h3>
-            <p>
-                iCarly é uma série da Nickelodeon que fez muito sucesso
-                entre os adolescentes.
-            </p>
-            <p>
-                A história mostra Carly, Sam e Freddie criando um
-                programa na internet chamado iCarly.
-            </p>
-            <!-- PRIMEIRA IMAGEM -->
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/8c/ICarly_actors_at_Joint_Base_McGuire-Dix-Lakehurst_2.jpg"
-                alt="Elenco de iCarly">
-            <h3>Personagens</h3>
-            <p>
-                Carly - Miranda Cosgrove
-            </p>
-            <p>
-                Sam - Jennette McCurdy
-            </p>
-            <p>
-                Freddie - Nathan Kress
-            </p>
-            <p>
-                Spencer - Jerry Trainor
-            </p>
-            <!-- SEGUNDA IMAGEM -->
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/ICarly_First_Lady.png"
-                alt="iCarly">
-            <h3>Vídeo</h3>
-            <div class="video">
-                <iframe
-                    src="https://www.youtube.com/embed/UZPdQyXl-Lo"
-                    title="Vídeo de iCarly"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <h3>Minha opinião</h3>
-            <p>
-                Eu gosto de iCarly porque é uma série divertida
-                e dá bastante nostalgia.
-            </p>
-            <p>
-                Você já assistiu iCarly? 😄
-            </p>
-        </article>
-    </main>
-    <footer>
+<header>
+
+    <h1>Hora do Filme</h1>
+
+    <p>Filmes e séries que a gente gosta!</p>
+
+</header>
+
+
+<main>
+
+    <article>
+
+        <h2>iCarly</h2>
+
         <p>
-            © 2026 Hora do Filme
+            Por: Pietra Servante
         </p>
-    </footer>
-</body>
-</html>
+
+
+        <h3>Sobre a série</h3>
+
+        <p>
+            iCarly é uma série da Nickelodeon que fez muito sucesso
+            entre os adolescentes.
+        </p>
+
+        <p>
+            A história mostra Carly, Sam e Freddie criando um
+            programa na internet chamado iCarly.
+        </p>
+
+
+        <!-- PRIMEIRA IMAGEM -->
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8c/ICarly_actors_at_Joint_Base_McGuire-Dix-Lakehurst_2.jpg"
+            alt="Elenco de iCarly">
+
+
+        <h3>Personagens</h3>
+
+        <p>
+            Carly - Miranda Cosgrove
+        </p>
+
+        <p>
+            Sam - Jennette McCurdy
+        </p>
+
+        <p>
+            Freddie - Nathan Kress
+        </p>
+
+        <p>
+            Spencer - Jerry Trainor
+        </p>
+
+
+        <!-- SEGUNDA IMAGEM -->
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5c/ICarly_First_Lady.png"
+            alt="Cena de iCarly">
+
+
+        <h3>Vídeo</h3>
+
+        <div class="video">
+
+            <iframe
+                src="https://www.youtube.com/embed/UZPdQyXl-Lo"
+                title="Vídeo de iCarly"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+        <h3>Minha opinião</h3>
+
+        <p>
+            Eu gosto de iCarly porque é uma série divertida
+            e dá bastante nostalgia.
+        </p>
+
+        <p>
+            Você já assistiu iCarly? 😄
+        </p>
+
+
+        <div class="botoes">
+
+            <button onclick="aumentar('curtidas')">
+                ❤️ <span id="curtidas">0</span>
+            </button>
+
+            <button onclick="aumentar('joinhas')">
+                💬<span id="joinhas">0</span>
+            </button>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<script>
+
+    function aumentar(id) {
+        let numero = document.getElementById(id);
+        let valor = parseInt(numero.innerText);
+
+        numero.innerText = valor + 1;
+    }
+
+</script>
