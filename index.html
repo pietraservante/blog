@@ -1,69 +1,44 @@
 <header>
-
     <h1>Hora do Filme</h1>
-
     <p>Filmes e séries que a gente gosta!</p>
 
 </header>
-
-
 <main>
-
     <article>
 
         <h2>iCarly</h2>
-
         <p>
             Por: Pietra Servante
         </p>
-
-
         <h3>Sobre a série</h3>
-
         <p>
             iCarly é uma série da Nickelodeon que fez muito sucesso
             entre os adolescentes.
         </p>
-
         <p>
             A história mostra Carly, Sam e Freddie criando um
             programa na internet chamado iCarly.
         </p>
-
-
-        <!-- PRIMEIRA IMAGEM -->
-
         <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/8c/ICarly_actors_at_Joint_Base_McGuire-Dix-Lakehurst_2.jpg"
             alt="Elenco de iCarly">
-
-
         <h3>Personagens</h3>
-
         <p>
             Carly - Miranda Cosgrove
         </p>
-
         <p>
             Sam - Jennette McCurdy
         </p>
-
         <p>
             Freddie - Nathan Kress
         </p>
-
         <p>
             Spencer - Jerry Trainor
         </p>
 
-
-        <!-- SEGUNDA IMAGEM -->
-
         <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/5c/ICarly_First_Lady.png"
             alt="Cena de iCarly">
-
-
         <h3>Vídeo</h3>
 
         <div class="video">
@@ -76,16 +51,14 @@
 
         </div>
 
-
         <h3>Minha opinião</h3>
 
         <p>
             Eu gosto de iCarly porque é uma série divertida
-            e dá bastante nostalgia.
+            e dá bastante nostalgia!
         </p>
-
         <p>
-            Você já assistiu iCarly? 😄
+            Você já assistiu iCarly? curte para sim, comente para Não!😄
         </p>
 
 
@@ -94,25 +67,18 @@
             <button onclick="aumentar('curtidas')">
                 ❤️ <span id="curtidas">0</span>
             </button>
-
             <button onclick="aumentar('joinhas')">
                 💬<span id="joinhas">0</span>
             </button>
-
         </div>
-
     </article>
 
 </main>
-
-
 <script>
 
     function aumentar(id) {
         let numero = document.getElementById(id);
         let valor = parseInt(numero.innerText);
-
         numero.innerText = valor + 1;
     }
-
 </script>
